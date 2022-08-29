@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is developd to identify the safety of url."
+    />
+    <meta
+      name="keywords"
+      content="phishing url,phishing,cyber security,machine learning,classifier,python"
+    />
+    <meta name="author" content="Santhosh" />
+
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="static/styles_contact.css" rel="stylesheet" />
+    <title>URL detection</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index">Home</a></li>
+      <li><a href="contact">Knowledge hub</a></li>
+      <li><a href="About">About</a></li>
+    </ul>
+    <div style="text-align: center; margin-top: 10px">
+      <h2>PHISHING URL DETECTION</h2>
+      <br />
+      <h3>What is Phishing?</h3>
+    </div>
+    <div class="content">
+      <br />
+      <p>
+        Phishing is a type of cybersecurity attack during which malicious actors
+        send messages pretending to be a trusted person or entity. Phishing
+        messages manipulate a user, causing them to perform actions like
+        installing a malicious file, clicking a malicious link, or divulging
+        sensitive information such as access credentials. Phishing is the most
+        common type of social engineering, which is a general term describing
+        attempts to manipulate or trick computer users. Social engineering is an
+        increasingly common threat vector used in almost all security incidents.
+        Social engineering attacks, like phishing, are often combined with other
+        threats, such as malware, code injection, and network attacks.
+      </p>
+      <h3>Phishing attack Example</h3>
+      <p>
+        The following illustrates a common phishing scam attempt:
+        <br />
+        <ol>
+            <li>
+                A spoofed email ostensibly from myuniversity.edu is mass-distributed to as
+                many faculty members as possible.
+            </li>
+            <li>
+                The email claims that the user's password is about to expire.Instructions are given to go to myuniversity.edu/renewal to renew their password within 24 hours.
+            </li>
+        </ol>  
+        <br>
+        <img src="/static/Example.JPG" alt="email spoof">
+        </p>
+        <p>
+            Several things can occur by clicking the link. 
+            <ol>
+                <li>
+                    The user is redirected to myuniversity.edurenewal.com, a bogus page appearing exactly like the real renewal page, where both new and existing passwords are requested. The attacker, monitoring the page, hijacks the original password to gain access to secured areas on the university network.
+                </li>
+                <li>
+                    The user is sent to
+                    the actual password renewal page. However, while being redirected, a
+                    malicious script activates in the background to hijack the user's
+                    session cookie. This results in a reflected XSS attack, giving the
+                    perpetrator privileged access to the university network.
+                </li>
+            </ol>
+        </p>
+    </div>
+  </body>
+</html>

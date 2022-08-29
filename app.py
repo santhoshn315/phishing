@@ -31,6 +31,17 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", xx= -1)
 
+@app.route("/index")
+def home():
+    return render_template("index.html", xx= -1)
+
+@app.route("/About")
+def about():
+    return render_template("About.html", xx= -1)
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", xx= -1)
 
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
