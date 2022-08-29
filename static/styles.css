@@ -1,22 +1,36 @@
-*,
-*::after,
-*::before {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  font-size: 62, 5%;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 body {
   height: 100vh;
   width: 100vw;
-  background: #0795d2;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  display: flex;
+  background: #72bede;
+  background: linear-gradient(to right, #72bede, #9ab5be, #e4e8ea);
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  color: #fff;
+  color: rgb(31, 29, 29);
 }
 
 .form__label {
@@ -24,7 +38,7 @@ body {
   font-size: 1.2rem;
   margin-left: 2rem;
   margin-top: 0.7rem;
-  display: block;
+  display: flex;
   transition: all 0.3s;
   transform: translateY(0rem);
 }
@@ -34,13 +48,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: #333;
   font-size: 1.2rem;
-  margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.2rem;
   background-color: rgb(255, 255, 255);
   border: none;
-  width: 90%;
-  display: block;
+  width: 100%;
+  display: flex;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
@@ -69,7 +82,7 @@ body {
   font-size: 100%;
   font-weight: 700;
   line-height: 24px;
-  margin: 0;
+  margin: 0 auto;
   outline: 2px solid transparent;
   padding: 1rem 1.5rem;
   text-align: center;
@@ -78,6 +91,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  justify-items: center;
   box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
     0px 2px 2px rgba(81, 41, 10, 0.2);
 }
@@ -98,6 +112,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -166,4 +181,8 @@ body {
 .right {
   right: 0px;
   width: 300px;
+  color: #111;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
 }
