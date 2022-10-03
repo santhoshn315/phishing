@@ -1,29 +1,9 @@
 # Phishing URL Detection 
 
-The Internet has become an indispensable part of our life, However, It also has provided opportunities to anonymously perform malicious activities like Phishing. Phishers try to deceive their victims by social engineering or creating mockup websites to steal information such as account ID, username, password from individuals and organizations. Although many methods have been proposed to detect phishing websites, Phishers have evolved their methods to escape from these detection methods. One of the most successful methods for detecting these malicious activities is Machine Learning. This is because most Phishing attacks have some common characteristics which can be identified by machine learning methods.
-
-
 ## Installation
-The Code is written in Python 3.6.10.To install the required packages and libraries, run this command in the project directory.
+The Code is written in Python.To install the required packages and libraries, run this command in the project directory.
 ```bash
 pip install -r requirements.txt
-```
-
-## Directory Tree 
-```
-├── static
-│   ├── styles.css
-├── templates
-│   ├── index.html
-├── Phishing URL Detection.ipynb
-├── Procfile
-├── README.md
-├── app.py
-├── feature.py
-├── phishing.csv
-├── requirements.txt
-
-
 ```
 
 ## Technologies Used
