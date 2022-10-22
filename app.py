@@ -1,5 +1,3 @@
-#importing required libraries
-
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
@@ -7,7 +5,7 @@ from sklearn import metrics
 import warnings
 warnings.filterwarnings('ignore')
 from feature import generate_data_set
-# Gradient Boosting Classifier Model
+
 from sklearn.ensemble import GradientBoostingClassifier
 
 data = pd.read_csv("phishing.csv")
@@ -25,7 +23,6 @@ gbc = GradientBoostingClassifier(max_depth=4,learning_rate=0.7)
 gbc.fit(X,y)
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
@@ -55,7 +52,7 @@ def predict():
         y_pro_phishing = gbc.predict_proba(x)[0,0]
         y_pro_non_phishing = gbc.predict_proba(x)[0,1]
         # if(y_pred ==1 ):
-        pred = "It is {0:.2f} % safe to go ".format(y_pro_phishing*100)
+        pred = "It is safe to go "
         return render_template('index.html',xx =round(y_pro_non_phishing,2),url=url )
         # else:
         #     pred = "It is {0:.2f} % unsafe to go ".format(y_pro_non_phishing*100)
